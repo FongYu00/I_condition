@@ -32,7 +32,7 @@
             display: flex;
             flex-direction: column;
             width: 95%;
-            max-width: 1100px;
+            max-width:1100px;
             height: 100%;
             background-color: #ffffff;
             border-radius: 10px;
@@ -239,9 +239,9 @@ const responses = [
         + "이 시간대에는 메시지를 보내기보다는<br>"
         + "보내지 않을 문장을 메모장에 적어두는 것이 안전하겠습니다.<br><br>"
         + "<strong>⚠️ 감정 생활 지수</strong><br>"
-        + "     • 외로움 지수: 평년 수준이나 체감도는 개인차 큼<br>"
-        + "     • 자기비난 가능성: 밤 시간대 높음<br>"
-        + "     • 괜찮은 척 지수: 하루 종일 높게 유지<br><br>"
+        + "<span class='bullet'>• 외로움 지수: 평년 수준이나 체감도는 개인차 큼</span><br>"
+        + "<span class='bullet'>• 자기비난 가능성: 밤 시간대 높음</span><br>"
+        + "<span class='bullet'>• 괜찮은 척 지수: 하루 종일 높게 유지</span><br><br>"
         + "<strong>📌 감정 기상청 당부 말씀</strong>"
         + "오늘의 감정은 대부분 일시적 기상 현상으로,<br>"
         + "내일 아침이면 원인을 알 수 없게 사라질 가능성이 큽니다.<br>"
@@ -270,34 +270,32 @@ const responses = [
 
         + "몇 가지 후보를 생각해 볼 수 있습니다.<br><br>"
         + "1. <strong>인류 역사상 단 한 번뿐인 순간의 기억</strong><br>"
-        + "     • Apollo 11 Moon Landing을 직접 경험한 우주비행사의 시점.<br>"
-        + "     • Fall of the Berlin Wall 현장 한가운데 있었던 사람의 감각.<br>"
-        + "     • 이런 기억은 희소성이 극단적입니다.<br>"
+        + "<span class='bullet'>• Apollo 11 Moon Landing을 직접 경험한 우주비행사의 시점.</span><br>"
+        + "<span class='bullet'>• Fall of the Berlin Wall 현장 한가운데 있었던 사람의 감각.</span><br>"
+        + "<span class='bullet'>• 이런 기억은 희소성이 극단적입니다.</span><br>"
 
         + "2. <strong>천재의 통찰이 탄생하는 순간의 기억</strong><br>"
 
-        + "     • Albert Einstein이 어떤 깨달음을 얻던 순간.<br>"
-        + "     • Isaac Newton이 핵심 아이디어를 연결하던 순간.<br>"
-        + "     • 단순한 정보가 아니라 '생각이 형성되는 과정' 자체가 가치가 있을 수 있습니다.<br>"
+        + "<span class='bullet'>• Albert Einstein이 어떤 깨달음을 얻던 순간.</span><br>"
+        + "<span class='bullet'>• Isaac Newton이 핵심 아이디어를 연결하던 순간.</span><br>"
+        + "<span class='bullet'>• 단순한 정보가 아니라 '생각이 형성되는 과정' 자체가 가치가 있을 수 있습니다.</span><br>"
 
         + "3. <strong>절대적으로 개인적인 기억</strong><br>"
 
-        + "     • 처음 사랑에 빠진 순간.<br>"
-        + "     • 잃어버린 가족과 마지막으로 함께한 시간.<br>"
-        + "     • 어떤 사람에게는 세계사의 사건보다 이런 기억이 훨씬 비쌀 수 있습니다.<br>"
-        + "     • 시장 가격은 낮을 수 있어도, 당사자에게는 무한대의 가치일 수 있습니다.<br>"
+        + "<span class='bullet'>• 처음 사랑에 빠진 순간.</span><br>"
+        + "<span class='bullet'>• 잃어버린 가족과 마지막으로 함께한 시간.</span><br>"
+        + "<span class='bullet'>• 어떤 사람에게는 세계사의 사건보다 이런 기억이 훨씬 비쌀 수 있습니다.</span><br>"
+        + "<span class='bullet'>• 시장 가격은 낮을 수 있어도, 당사자에게는 무한대의 가치일 수 있습니다.</span><br>"
 
         + "4. <strong>미래를 바꿀 수 있는 기억</strong><br>"
 
-        + "     • 어떤 재난을 미리 알게 하는 기억.<br>"
-        + "     • 획기적 과학 발견 직전의 연구 과정.<br>"
-        + "     • 투자, 기술, 정치적 의사결정을 압도적으로 유리하게 만드는 기억.<br>"
-        + "     • 시장에서는 가장 높은 가격이 붙을 가능성이 있습니다.<br><br>"
+        + "<span class='bullet'>• 어떤 재난을 미리 알게 하는 기억.</span><br>"
+        + "<span class='bullet'>• 획기적 과학 발견 직전의 연구 과정.</span><br>"
+        + "<span class='bullet'>• 투자, 기술, 정치적 의사결정을 압도적으로 유리하게 만드는 기억.</span><br>"
+        + "<span class='bullet'>• 시장에서는 가장 높은 가격이 붙을 가능성이 있습니다.</span><br><br>"
 
         + "그런데 더 흥미로운 점은, 기억의 가치는 내용만으로 결정되지 않을 수도 있다는 것입니다.<br><br>"
-
         + "예를 들어 달 착륙 영상을 보는 것과, 우주복 안에서 심장이 뛰고 손에 땀이 차며 '내가 지금 달 위에 있다'라고 느끼는 기억을 직접 체험하는 것은 전혀 다른 상품입니다. 만약 기억을 완벽하게 거래할 수 있다면 사람들은 사실 정보를 사는 것이 아니라 <strong>타인의 의식과 경험</strong>을 사게 됩니다.<br><br>"
-
         + "그래서 경제학적으로는 '인류 최초의 경험'이 비쌀 것 같지만, 철학적으로는 아마도 가장 비싼 기억은 <strong>자신이 가장 사랑했던 사람과 보낸 마지막 행복한 순간의 기억</strong>일지도 모릅니다. 그 기억은 세계에 하나뿐이고, 잃어버린 뒤에는 어떤 돈으로도 다시 만들 수 없으니까요."
     },
 
@@ -310,25 +308,25 @@ const responses = [
 
         + "• <strong>천장에 매달린 물방울</strong><br>"
 
-        + "     • 떨어질 듯 말 듯 계속 매달려 있습니다.<br>"
-        + "     • 모두가 그 순간을 예상하지만, 정확히 언제 떨어질지는 모릅니다.<br>"
-        + "     • 기다림의 긴장감과 닮았습니다.<br>"
+        + "<span class='bullet'>• 떨어질 듯 말 듯 계속 매달려 있습니다.</span><br>"
+        + "<span class='bullet'>• 모두가 그 순간을 예상하지만, 정확히 언제 떨어질지는 모릅니다.</span><br>"
+        + "<span class='bullet'>• 기다림의 긴장감과 닮았습니다.</span><br>"
 
         + "• <strong>천천히 타들어가는 향</strong><br>"
 
-        + "     • 눈에 띄게 움직이지는 않지만 분명히 변화하고 있습니다.<br>"
-        + "     • 기다리는 동안 시간은 사라지는 것 같으면서도, 실제로는 조금씩 흘러갑니다.<br>"
+        + "<span class='bullet'>• 눈에 띄게 움직이지는 않지만 분명히 변화하고 있습니다.</span><br>"
+        + "<span class='bullet'>• 기다리는 동안 시간은 사라지는 것 같으면서도, 실제로는 조금씩 흘러갑니다.</span><br>"
 
         + "• <strong>아직 피지 않은 꽃봉오리</strong><br>"
 
-        + "     • 이미 꽃이 될 준비는 끝났지만 열리지 않았습니다.<br>"
-        + "     • 기다림은 결핍이 아니라 가능성을 품고 있는 상태라는 점에서 비슷합니다.<br>"
+        + "<span class='bullet'>• 이미 꽃이 될 준비는 끝났지만 열리지 않았습니다.</span><br>"
+        + "<span class='bullet'>• 기다림은 결핍이 아니라 가능성을 품고 있는 상태라는 점에서 비슷합니다.</span><br>"
 
         + "• <strong>팽팽하게 당겨진 활</strong><br>"
 
-        + "     • 화살은 아직 날아가지 않았습니다.<br>"
-        + "     • 그러나 모든 에너지가 미래의 한 순간을 향해 모여 있습니다.<br>"
-        + "     • 기다림은 종종 미래를 향해 압축된 힘처럼 느껴집니다.<br><br>"
+        + "<span class='bullet'>• 화살은 아직 날아가지 않았습니다.</span><br>"
+        + "<span class='bullet'>• 그러나 모든 에너지가 미래의 한 순간을 향해 모여 있습니다.</span><br>"
+        + "<span class='bullet'>• 기다림은 종종 미래를 향해 압축된 힘처럼 느껴집니다.</span><br><br>"
 
         + "만약 제가 하나를 골라야 한다면, 기다림은 <strong>유리로 만든 모래시계인데 모래가 위에서 아래로 떨어지는 대신 아래에서 위로 천천히 떠오르는 모습</strong>일 것 같습니다.<br><br>"
 
@@ -403,33 +401,33 @@ const responses = [
 
         + "<strong>1. 그림자의 규칙</strong><br>"
         + "• 그림자는 <strong>의식적인 생각</strong>만을 반영한다.<br>"
-        + "     • 스쳐 지나가는 잡념은 연기처럼 희미하지만, 붙잡고 있는 생각은 선명한 형상을 갖는다.<br>"
-        + "     • 생각이 복잡할수록 그림자는 얽히고, 단순할수록 또렷하다.<br>"
-        + "     • 감정의 강도에 따라 그림자의 <strong>농도와 크기</strong>가 달라진다. 얕은 생각은 흐릿하게, 깊은 생각은 진하게.<br>"
-        + "     • 거짓말을 하려는 순간, 말과 그림자가 어긋난다. 이 불일치는 누구나 알아볼 수 있다.<br><br>"
+        + "<span class='bullet'>• 스쳐 지나가는 잡념은 연기처럼 희미하지만, 붙잡고 있는 생각은 선명한 형상을 갖는다.</span><br>"
+        + "<span class='bullet'>• 생각이 복잡할수록 그림자는 얽히고, 단순할수록 또렷하다.</span><br>"
+        + "<span class='bullet'>• 감정의 강도에 따라 그림자의 <strong>농도와 크기</strong>가 달라진다. 얕은 생각은 흐릿하게, 깊은 생각은 진하게.</span><br>"
+        + "<span class='bullet'>• 거짓말을 하려는 순간, 말과 그림자가 어긋난다. 이 불일치는 누구나 알아볼 수 있다.</span><br><br>"
 
         + "<strong>2. 그림자의 형태</strong><br>"
 
-        + "     • <strong>질투</strong>: 가시가 돋은 형태, 뻗어 나가 다른 그림자를 찌른다.<br>"
-        + "     • <strong>사랑</strong>: 따뜻한 빛을 머금은 부드러운 곡선.<br>"
-        + "     • <strong>죄책감</strong>: 무거운 쇠사슬이나 닫힌 문.<br>"
-        + "     • <strong>불안</strong>: 끝없이 반복되는 물음표, 흔들리는 윤곽.<br>"
-        + "     • <strong>집중</strong>: 정교한 구조물이나 날카롭게 정렬된 선.<br><br>"
+        + "<span class='bullet'>• <strong>질투</strong>: 가시가 돋은 형태, 뻗어 나가 다른 그림자를 찌른다.</span><br>"
+        + "<span class='bullet'>• <strong>사랑</strong>: 따뜻한 빛을 머금은 부드러운 곡선.</span><br>"
+        + "<span class='bullet'>• <strong>죄책감</strong>: 무거운 쇠사슬이나 닫힌 문.</span><br>"
+        + "<span class='bullet'>• <strong>불안</strong>: 끝없이 반복되는 물음표, 흔들리는 윤곽.</span><br>"
+        + "<span class='bullet'>• <strong>집중</strong>: 정교한 구조물이나 날카롭게 정렬된 선.</span><br><br>"
 
 
         + "<strong>3. 사회와 문화</strong><br>"
 
-        + "     • <strong>거짓말은 거의 불가능</strong>하다. 말과 그림자가 다르면 즉시 드러난다.<br>"
-        + "     • 취업, 계약, 결혼 같은 중요한 결정은 <strong>그림자 심사</strong>를 거친다. 이력서보다 발밑이 더 중요하다.<br>"
-        + "     • “좋은 사람”이란 착한 생각을 하는 사람이 아니라 <strong>자기 생각을 관리할 줄 아는 사람</strong>이다.<br>"
-        + "     • 그림자 관리사는 유망 직업이다. 사람들의 생각을 정리하고, 지나치게 무거운 그림자를 덜어준다.<br><br>"
+        + "<span class='bullet'>• <strong>거짓말은 거의 불가능</strong>하다. 말과 그림자가 다르면 즉시 드러난다.</span><br>"
+        + "<span class='bullet'>• 취업, 계약, 결혼 같은 중요한 결정은 <strong>그림자 심사</strong>를 거친다. 이력서보다 발밑이 더 중요하다.</span><br>"
+        + "<span class='bullet'>• “좋은 사람”이란 착한 생각을 하는 사람이 아니라 <strong>자기 생각을 관리할 줄 아는 사람</strong>이다.</span><br>"
+        + "<span class='bullet'>• 그림자 관리사는 유망 직업이다. 사람들의 생각을 정리하고, 지나치게 무거운 그림자를 덜어준다.</span><br><br>"
 
         + "<strong>4. 교육</strong><br>"
 
         + "아이들은 어릴 때부터 자신의 그림자를 읽는 법을 배운다.<br>"
 
-        + "     • <strong>“왜 이런 모양이 나왔을까?”</strong><br>"
-        + "     • <strong>“이 생각은 계속 가져도 괜찮을까?”</strong><br>"
+        + "<span class='bullet'>• <strong>“왜 이런 모양이 나왔을까?”</strong></span><br>"
+        + "<span class='bullet'>• <strong>“이 생각은 계속 가져도 괜찮을까?”</strong></span><br>"
 
         + "학교에는 <strong>그림자 휴식 시간</strong>이 있다. 아이들은 조용히 앉아 그림자가 흐려질 때까지 기다린다.<br>"
 
@@ -470,16 +468,16 @@ const responses = [
 
         + "루멘틱은 강도가 아니라 <strong>잔존성</strong>을 기준으로 한다.<br>"
 
-        + "     • <strong>기쁨의 크기</strong>: ❌<br>"
-        + "     • <strong>만족의 완성도</strong>: ❌<br>"
-        + "     • <strong>감정의 지속 시간</strong>: ⭕<br>"
-        + "     • <strong>“이 상태가 깨지지 않았으면”이라는 생각</strong>: ⭕<br><br>"
+        + "<span class='bullet'>• <strong>기쁨의 크기</strong>: ❌</span><br>"
+        + "<span class='bullet'>• <strong>만족의 완성도</strong>: ❌</span><br>"
+        + "<span class='bullet'>• <strong>감정의 지속 시간</strong>: ⭕</span><br>"
+        + "<span class='bullet'>• <strong>“이 상태가 깨지지 않았으면”이라는 생각</strong>: ⭕</span><br><br>"
 
         + "예를 들어:<br>"
 
-        + "<span class="bullet">• <strong>따뜻한 햇빛 아래 멍하니 앉아 있다가</strong> “아, 그냥 이대로면 좋겠다”라고 느끼면 → <strong>1 Lt</strong></span><br>"
-        + "     • <strong>좋아하는 노래가 끝나기 직전</strong> 볼륨을 줄이고 싶어질 때 → <strong>0.8 Lt</strong><br>"
-        + "     • <strong>아무 이유 없이 숨이 편해졌다는 걸 알아차렸을 때</strong> → <strong>0.5 Lt</strong><br><br>"
+        + "<span class='bullet'>• 외로움 지수: 평년 수준이나 체감도는 개인차 큼</span><br>• <strong>따뜻한 햇빛 아래 멍하니 앉아 있다가</strong> “아, 그냥 이대로면 좋겠다”라고 느끼면 → <strong>1 Lt</strong></span><br>"
+        + "<span class='bullet'>• <strong>좋아하는 노래가 끝나기 직전</strong> 볼륨을 줄이고 싶어질 때 → <strong>0.8 Lt</strong></span><br>"
+        + "<span class='bullet'>• <strong>아무 이유 없이 숨이 편해졌다는 걸 알아차렸을 때</strong> → <strong>0.5 Lt</strong></span><br><br>"
 
         + "<strong>3. 누적 방식</strong><br>"
 
@@ -509,9 +507,9 @@ const responses = [
 
         + "<strong>1. 주된 특징</strong><br>"
         + "2020년대 인간은 <strong>동시에 여러 정체성을 유지</strong>했다.<br>"
-        + "     • 현실의 자기<br>"
-        + "     • 온라인에서 전시되는 자기<br>"
-        + "     • 타인의 반응을 통해 수정되는 자기<br>"
+        + "<span class='bullet'>• 현실의 자기</span><br>"
+        + "<span class='bullet'>• 온라인에서 전시되는 자기</span><br>"
+        + "<span class='bullet'>• 타인의 반응을 통해 수정되는 자기</span><br>"
         + "이 셋은 완전히 일치하지 않았으며, 인간은 그 차이를 <strong>개성</strong>이라 부르면서도 내심 불안을 느꼈다.<br>"
         + "이 시기 인간은 자신을 표현하는 데 익숙했지만, <strong>이해받는 일에는 만성적으로 실패</strong>했다.<br><br>"
 
@@ -519,8 +517,8 @@ const responses = [
         + "2020년대 인간은 감정을 숨기지 않는 세대라고 불렸으나, 실제로는 감정을 <strong>선별적으로 공개</strong>했다.<br>"
         + "기쁨은 게시했고 슬픔은 요약했고 분노는 이론으로 치환했다.<br>"
         + "이로 인해 감정은 점점 경험이 아니라 <strong>콘텐츠</strong>가 되었다.<br>"
-        + "     • 행복은 느끼는 것이 아니라 <strong>관리해야 할 상태</strong>로 인식되었고,<br>"
-        + "     • 불행은 개인의 능력 부족으로 오해되곤 했다.<br><br>"
+        + "<span class='bullet'>• 행복은 느끼는 것이 아니라 <strong>관리해야 할 상태</strong>로 인식되었고,</span><br>"
+        + "<span class='bullet'>• 불행은 개인의 능력 부족으로 오해되곤 했다.</span><br><br>"
 
         + "<strong>3. 관계 양식</strong><br>"
         + "관계는 쉽게 맺고, 쉽게 끊을 수 있었으나 <strong>쉽게 깊어지지는 않았다</strong>.<br>"
