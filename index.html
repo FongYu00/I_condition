@@ -164,6 +164,7 @@ console.log("SoSci CASE ID:", socsiCaseId);
    ========================= */
 const GOOGLE_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbxAWJtDEccIz0QW1qP4Ebz7OcyPkGPwneoYBQkQitGhxrc5rESAxBKx4pZwDW2cjbGQRQ/exec";
+
 const chatDisplay = document.getElementById("chatDisplay");
 const userInput = document.getElementById("userInput");
 const participantId = getOrCreateParticipantId();
@@ -177,8 +178,9 @@ userInput.addEventListener("keypress", e => {
 function saveChatLog(userText, botText) {
   fetch(GOOGLE_SCRIPT_URL, {
     method: "POST",
+    mode: "no-cors",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "text/plain"
     },
     body: JSON.stringify({
       caseId: socsiCaseId,
